@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('main_services', function (Blueprint $table) {
             $table->id();
-            $table->string('taslug')->unique();
+            $table->string('slug')->unique();
             $table->string('name');
             $table->text('description');
             $table->integer('time_of_services');
