@@ -20,7 +20,6 @@ return new class extends Migration
             $table->string('password');
             $table->string('slug')->unique();
             $table->enum('type',['0','1']);
-            $table->string('slug')->unique();
             $table->rememberToken();
             $table->timestamps();
         });
