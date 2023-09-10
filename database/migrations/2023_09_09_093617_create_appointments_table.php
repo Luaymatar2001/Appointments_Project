@@ -18,7 +18,7 @@ return new class extends Migration
             $table->time('end_time');
             $table->date('dateoftime');
             $table->integer('longoftime');
-            $table->integer('slug');
+            $table->string('slug')->unique();
             $table->timestamps();
         });
     }
